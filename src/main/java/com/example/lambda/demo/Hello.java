@@ -8,6 +8,7 @@ public class Hello implements RequestHandler<Object, String> {
 	public String handleRequest(Object input, Context context) {
 	  context.getLogger().log("Input: " + input);
 	  String output = "Hello, good day " + input + "!";
+	  String output = "Hello, good day " + input "!"; //fail build
 	  return output;
 	}
 
